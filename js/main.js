@@ -1,8 +1,8 @@
 /*
-	Name: LazyGuy
-	Description: Personal Landing Page
+	Name: Daniel Escobar
+	Description: Página Personal
 	Version: 1.0
-	Author: pixelwars
+	Author: Daniel Escobar
 */
 
 (function () {
