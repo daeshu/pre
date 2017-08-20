@@ -19,6 +19,8 @@
     
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
     
     
     <!-- CUSTOM FONT FROM GOOGLE FONTS -->
@@ -36,7 +38,54 @@
 </head>
 
 <body class="is-text-align-center">
-	
+<!-- FORMS -->
+	<aside class="sidebar">
+		<a href="#" class="menu-close"><span class="icon-cross"></span></a>
+		<div class="sidebar-container">
+			<div class="sidebar-text">
+				<span class="sidebar-name">Daniel Escobar</span>
+				<p class="sidebar-prof">Web Site</p>
+			</div>
+			<div class="sidebar-form">
+				<form class ="formBlock contact-form">
+					<fieldset>
+						<legend>Contactos</legend>
+						<div class="form-item">
+							<label for="itemName">Nombre:</label>
+							<input id="name" type="text" name="name" placeholder="Your name" required>
+						</div>
+						<div class="form-item">
+							<label for="itemEmail">E-mail:</label>
+							<input id="email" type="email" placeholder="Your E-mail" required>
+						</div>
+						<div class="form-item">
+							<label for="itemMessage">Mensaje:</label>
+							<textarea id="comments" type="text" name="message" placeholder="Message" required></textarea>
+						</div>
+						<div class="form-item">
+							<button type="submit" value="Send" class="form-btn">Enviar</button>
+						</div>
+					</fieldset>
+				</form>
+				<div class="thankyouBlock">
+					<p>Gracias por enviar el mensaje. Te respondo en breve.</p>
+				</div>
+			</div>
+			<div class="sidebar-social">
+				<a href="http://twitter.com/DanielEscobarW" title="Twitter"><span class="icon-twitter"></span></a>
+				<a href="https://codepen.io/artemsheludko" title="Codepen"><span class="icon-codepen"></span></a>
+				<a href="https://keybase.io/artemsheludko" title="Keybase"><span class="icon-key2"></span></a>
+			</div>
+		</div>
+	</aside>
+
+	<footer>
+		<div class="copyright">© 2017 <strong>Daniel Escobar</strong></div>
+	</footer>
+
+	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/function.js"></script>
+	    <!-- FORMS -->
     
     <!-- CONTENT-WRAP -->
     <div class="content-wrap">
