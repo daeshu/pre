@@ -40,6 +40,32 @@
             </h1>
             <!-- TITLE -->
             <hr>
+	    <!-- TITLE -->
+	    <div id="form">
+ 	 <form method="POST" action="https://formspree.io/info@escobar.eu.org"
+        v-on:submit.prevent="validateBeforeSubmit" ref="contato">
+   	 <fieldset>
+     	 <input type="hidden" name="_subject" value="Novo contato!" />
+     	 <input type="hidden" name="_next" value="https://www.rossener.com/contato/mensagem-enviada/" />
+      	<input type="hidden" name="_language" value="pt" />
+
+      	<input type="text" name="nome" placeholder="Seu nome" v-validate="'required'"
+             :class="{ 'has-error': errors.has('nome') }">
+      	<span v-if="errors.has('nome')">${ errors.first('nome') }</span>
+
+      	<input type="text" name="email" placeholder="Seu e-mail" v-validate="'required|email'"
+             :class="{ 'has-error': errors.has('nome') }">
+    	<span v-if="errors.has('email')">${ errors.first('email') }</span>
+
+      	<textarea name="mensagem" placeholder="Sua mensagem" v-validate="'required'"
+                :class="{ 'has-error': errors.has('nome') }"></textarea>
+      	<span v-if="errors.has('mensagem')">${ errors.first('mensagem') }</span>
+
+      	<button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+</div>
+	    <!-- TITLE -->
             </p>
             </p>
             <p>Aquí está la relación de las últimas publicaciones ordenadas por fecha de forma ascendente, para ver las publicacioines anteriores debes visitar el siguiente <a class="link-1 green" target="_blank" href="https://daeshu.blogspot.com">Blog</a></p>
